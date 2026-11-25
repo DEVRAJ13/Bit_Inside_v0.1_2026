@@ -1,0 +1,70 @@
+
+.tabs-container {
+  width: 100%;
+}
+
+/* Bottom navigation */
+.tabs-header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+
+  z-index: 1000;
+}
+
+/* Each tab button */
+.tab-button {
+  flex: 1;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background: transparent;
+
+  color: #777777;
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+/* Selected tab */
+.tab-button.active {
+  color: #111111;
+}
+
+/* Hover */
+.tab-button:hover {
+  color: #111111;
+}
+
+/* Mobile friendly */
+@media (max-width: 480px) {
+  .tabs-header {
+    height: 65px;
+  }
+
+  .tab-button svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+
+.page-content {
+  padding: none;
+  padding-bottom: 90px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
