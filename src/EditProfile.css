@@ -1,0 +1,143 @@
+.edit-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 520px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #111111;
+}
+
+.edit-avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.edit-avatar {
+  width: 88px;
+  height: 88px;
+  font-size: 34px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.edit-avatar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.edit-avatar-actions .pill-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-btn {
+  border: none;
+  background: none;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5f5f5f;
+  cursor: pointer;
+}
+
+.edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.edit-field > span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.edit-count {
+  font-weight: 400;
+  color: #767676;
+}
+
+.edit-field input,
+.edit-field textarea,
+.edit-prefix {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #cdcdcd;
+  border-radius: 16px;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 16px;
+  color: #111111;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.edit-field textarea {
+  resize: vertical;
+  min-height: 88px;
+}
+
+.edit-field input:focus,
+.edit-field textarea:focus,
+.edit-prefix:focus-within {
+  border-color: #111111;
+}
+
+.edit-field input:disabled {
+  background: #f1f1f1;
+  border-color: #f1f1f1;
+  color: #767676;
+}
+
+.edit-prefix {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.edit-prefix em {
+  font-style: normal;
+  color: #767676;
+}
+
+.edit-prefix input {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.edit-error {
+  color: #d93025;
+  font-size: 13px;
+}
+
+.edit-footer {
+  position: sticky;
+  bottom: -20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 12px 0 4px;
+  background: #ffffff;
+}
+
+.pill-btn.primary {
+  background: #111111;
+  color: #ffffff;
+}
+
+.pill-btn.primary:hover {
+  background: #333333;
+}
+
+.pill-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
